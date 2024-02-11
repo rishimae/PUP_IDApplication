@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Application for New or Replacement of Identification Card Form</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    </head>
+        <body>
+            <section class="subheader">
+                <nav>
+                    <a href="index.html"><img src="image/PUPLogo.png"></a>
+                    <div class="nav-links">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <h2>Application for New/Replacement of Identification Card</h2>
+            </section>
+            <!----- ID FORM ----->
+            <section class="id-form">
+                <div class="container">
+                    <form method="post" action="https://script.google.com/macros/s/AKfycbxNAw65JwwbsnFSGYlqIct8nOf86kQ8jiyXMcZQNqBPP7JX-nyqPLjgDYknZmBHwOB4/exec">
+                        <div class="form info">
+                            <span class="title">Personal Information</span>
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label for="">First Name</label>
+                                    <input type="text" id="firstName" name="firstName" placeholder="Enter your First Name">
+                                    <span></span>
+                                </div>
+                                <div class="input-field">
+                                    <label for="">Middle Name</label>
+                                    <input type="text" id="middleName" name="middleName" placeholder="Enter your Middle Name">
+                                    <span></span>
+                                </div>
+                                <div class="input-field">
+                                    <label for="">Last Name</label>
+                                    <input type="text" id="lastName" name="lastName" placeholder="Enter your Last Name">
+                                    <span></span>
+                                </div>
+                                <div class="input-field">
+                                    <label for="gender">Gender</label>
+                                    <select id="gender" name="gender">
+                                        <option value="" disabled selected>Select Gender</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </div>
+                                <div class="input-field">
+                                    <label for="dob">Birthdate</label>
+                                    <input type="date" id="dob" name="dob">
+                                </div>
+                                <div class="input-field">
+                                    <label for="">Home Address</label>
+                                    <input type="text" id="homeAddress" name="homeAddress" placeholder="Home Address">
+                                </div>
+                                <div class="input-field">
+                                    <label for="">Phone Number</label>
+                                    <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone/Mobile Number">
+                                </div>
+                                <div class="input-field">
+                                    <label for="">Email Address</label>
+                                    <input type="email" id="email" name="email" placeholder="Email Address">
+                                </div>
+                                <div class="input-field">
+                                    <label for="idapp">Reasons/Categories for ID Application</label>
+                                    <select id="idapp" name="idapp">
+                                        <option value="" disabled selected>Select Category</option>
+                                        <option value="Transferee">Transferee</option>
+                                        <option value="Late Filling">Late Filling</option>
+                                        <option value="Old ID">Old ID</option>
+                                        <option value="Shiftee">Shiftee</option>
+                                        <option value="Damaged">Damaged</option>
+                                        <option value="Correction of Entry">Correction of Entry</option>
+                                        <option value="LHS">Laboratory High School</option>
+                                        <option value="SHS">Senior High School</option>
+                                        <option value="Undergrad">Undergraduate</option>
+                                        <option value="CoL">College of Law</option>
+                                        <option value="Graduate School">Graduate School</option>
+                                        <option value="Open University">Open University</option>
+                                        <option value="IoT">Institute of Technology</option>
+                                    </select>
+                                </div>
+                                </div>
+                            <div>
+                        <div>
+  
+                        <div class="school info">
+                            <span class="title">School Information</span>
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label for="">Student Number</label>
+                                    <input type="text" id="studentNumber" name="studentNumber" placeholder="Enter your Student Number">
+                                    <span>Sample: XXXX-XXXXX-MN-X</span>
+                                </div>
+                                <div class="input-field">
+                                    <label for="">College</label>
+                                    <input type="text" id="college" name="college" placeholder="College/Department">
+                                    <span>Sample: College of Engineering</span>
+                                </div>
+                                <div class="input-field">
+                                    <label for="">Course, Year, and Section</label>
+                                    <input type="text" id="course" name="course" placeholder="Course, Year, and Section">
+                                    <span>Sample: BSIT 3-1N</span>
+                                </div>
+                            </div>
+                        <div>
+                        
+                        <div class="emergency info">
+                            <span class="title">Emergency Contact</span>
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label for="">Full Name</label>
+                                    <input type="text" id="emergencyContactName" name="emergencyContactName" placeholder="Enter the Complete Name">
+                                    <span></span>
+                                </div>
+                                <div class="input-field">
+                                    <label for="">Contact Number</label>
+                                    <input type="text" id="emergencyContactNumber" name="emergencyContactNumber" placeholder="Phone/Mobile Number">
+                                    
+                                </div>
+                                <div class="input-field">
+                                    <label for="">Full Address</label>
+                                    <input type="text" id="emergencyContactAddress" name="emergencyContactAddress" placeholder="Home Address">
+                                    <span></span>
+                                </div>
+                            </div>
+                        <div>
+
+                            
+                            <button type="button" onclick="cancelForm()">Cancel</button>
+                            <button type="submit" onclick="return validateForm()">Submit</button>
+
+                    </form>
+                </div>
+                
+            </section>
+            
+                <script>
+                    // Validation function for Form 1
+                    function validateForm() {
+                        var firstName = document.getElementById("firstName").value.trim();
+                        var middleName = document.getElementById("middleName").value.trim();
+                        var lastName = document.getElementById("lastName").value.trim();
+                        var gender = document.getElementById("gender").value.trim();
+                        var dob = document.getElementById("dob").value.trim();
+                        var homeAddress = document.getElementById("homeAddress").value.trim();
+                        var phoneNumber = document.getElementById("phoneNumber").value.trim();
+                        var email = document.getElementById("email").value.trim();
+                        var idapp = document.getElementById("idapp").value.trim();
+
+                        // Check if any field is empty
+                        if (firstName === "" || middleName === "" || lastName === "" || homeAddress === "" || gender === "" || dob === "" || phoneNumber === "" || email === "" || idapp === "") {
+                            alert("Please fill in all fields.");
+                            return false;
+                        }
+                        if (gender !== "Male" && gender !== "Female") {
+                            alert("Please select a gender (Male or Female).");
+                            return false;
+                        }
+                        var phonePattern = /^\d{11}$/;
+                        if (!phonePattern.test(phoneNumber)) {
+                            alert("Please enter a valid 11-digit phone number.");
+                            return false;
+                        }
+                        var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                        if (!emailPattern.test(email)) {
+                            alert("Please enter a valid email address.");
+                            return false;
+                        }
+                        if (idapp === "" || idapp === null || idapp === "Select Category") {
+                            alert("Please select a category for ID application.");
+                            return false;
+                        }
+                        var studentNumber = document.getElementById("studentNumber").value.trim();
+                        var college = document.getElementById("college").value.trim();
+                        var course = document.getElementById("course").value.trim();
+
+                        if (studentNumber === "" || college === "" || course === "") {
+                            alert("Please fill in all fields.");
+                            return false;
+                        }
+                        var studentNumberPattern = /^20\d{2}-\d{5}-[A-Z]{2}-\d$/;
+                        if (!studentNumberPattern.test(studentNumber)) {
+                            alert("Please enter the correct student number.");
+                            return false;
+                        }
+                        var emergencyContactName = document.getElementById("emergencyContactName").value.trim();
+                        var emergencyContactNumber = document.getElementById("emergencyContactNumber").value.trim();
+                        var emergencyContactAddress = document.getElementById("emergencyContactAddress").value.trim();
+
+                        if (emergencyContactName === "" || emergencyContactNumber === "" || emergencyContactAddress === "") {
+                            alert("Please fill in all fields.");
+                            return false;
+                        }
+                        var emergencyContactNumberPattern = /^\d{11}$/;
+                        if (!emergencyContactNumberPattern.test(emergencyContactNumber)) {
+                            alert("Please enter a valid 11-digit emergency contact number.");
+                            return false;
+                        }
+
+                        return true;
+                    }
+                    function cancelForm() {
+                        var fields = document.getElementsByClassName("input-field");
+                        
+                        // Loop through each input field
+                        for (var i = 0; i < fields.length; i++) {
+                            var input = fields[i].getElementsByTagName("input")[0];
+                            var select = fields[i].getElementsByTagName("select")[0];
+                            
+                            // Clear the value of input fields
+                            if (input) {
+                                input.value = "";
+                            }
+                            
+                            // Reset select fields to their default option
+                            if (select) {
+                                select.selectedIndex = 0;
+                            }
+                            
+                            // Remove error class if present
+                            fields[i].classList.remove("error");
+                        }
+                    }
+     
+                </script>
+
+            </section>
+
+        </body>
+</html>
